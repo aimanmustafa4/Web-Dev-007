@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation lecture</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: chartreuse;
+            display: flex;
+            justify-content: center;  
+            align-items: center; 
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            /* animation-name: colorAnimation ;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-delay: .7s;
+            animation-iteration-count: infinite ;
+            animation-direction: normal; */
+            animation: colorAnimation 3s ease 5s infinite alternate;
+        }
+        @keyframes colorAnimation{
+            0%{
+            border: 2px solid black;
+            background-color: chartreuse;
+            color: black;
+            border-radius: 3rem;
+            top: 200px;
+            left: 400px;
+            }
+            30%{
+                background-color: crimson;
+                color: palevioletred;
+                border: 10px solid purple;
+            }
+            100%{
+                background-color: cadetblue;
+                color: azure;
+                border: 5px solid blue;
+                border-radius: 50%;
+                top: 700px;
+                left: -100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    Animation Box
+    </div>
+</body>
+</html>
